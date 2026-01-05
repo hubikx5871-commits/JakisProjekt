@@ -1,0 +1,70 @@
+settings:
+  command: "gornik"
+  xp-per-level: 1000
+  speed-upgrade-cost: 5000
+  speed-multiplier-per-level: 0.1
+  blocks:
+    STONE: 5
+    COAL_ORE: 15
+    IRON_ORE: 30
+    DIAMOND_ORE: 150
+
+sounds:
+  xp-gain: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  levelup: "ENTITY_PLAYER_LEVELUP"
+  upgrade-buy: "BLOCK_NOTE_BLOCK_CHIME"
+  prestige: "UI_TOAST_CHALLENGE_COMPLETE"
+  gui-open: "BLOCK_CHEST_OPEN"
+  admin-give: "ENTITY_PLAYER_LEVELUP"
+
+particles:
+  levelup: "HAPPY_VILLAGER"
+  upgrade: "SCRAPE"
+  prestige: "TOTEM_OF_UNDYING"
+  admin-give: "END_ROD"
+
+messages:
+  prefix: "<gradient:gold:yellow><bold>GORNIK</bold></gradient> <dark_gray>»</dark_gray> "
+  no-permission: "<red>Nie masz uprawnień!</red>"
+  player-not-found: "<red>Gracz <white><target></white> jest offline!</red>"
+  actionbar-xp: "<gold>+<amount> XP</gold>"
+
+  levelup-title: "<gradient:yellow:gold><bold>NOWY LEVEL</bold></gradient>"
+  levelup-subtitle: "<gray>dostales lvl <white><level></white></gray>"
+
+  not-enough-xp: "<red>Nie masz XP! Brakuje Ci <gold><amount> XP</gold>.</red>"
+  max-speed-reached: "<red>Osiągnąłeś maksymalny poziom szybkości!</red>"
+  speed-upgraded: "<green>Ulepszono szybkość do poziomu <white><level></white>!</green>"
+  not-enough-lvl-prestige: "<red>Wymagany 10 poziom do prestiżu!</red>"
+  prestige-success: "<light_purple><bold>AWANS!</bold> Zdobyłeś prestiż!</light_purple>"
+
+  admin-usage: "<red>Użycie: /gr <xp/lvl> <gracz> <daj/usun/sprawdz> [ilość]</red>"
+  admin-gave: "<gray>Dodałeś <gold><amount> <type></gold> graczowi <white><target></white>.</gray>"
+  admin-removed: "<gray>Zabrałeś <gold><amount> <type></gold> graczowi <white><target></white>.</gray>"
+  admin-check: "<yellow>Statystyki <white><target></white>: <gold><xp> XP</gold>, <aqua>Prestiż <prestige></aqua>, <green>Szybkość <speed></green></yellow>"
+  player-received: "<gray>Otrzymałeś <gold><amount> <type></gold> od <white><admin></white>.</gray>"
+  player-lost: "<red>Administrator <white><admin></white> zabrał Ci <gold><amount> <type></gold>.</red>"
+
+gui:
+  title: "<dark_gray>Menu Górnika"
+  stats-item: "PLAYER_HEAD"
+  stats-name: "<yellow>Twoje Statystyki</yellow>"
+  stats-lore:
+    - "<gray>Poziom: <white><level></white>"
+    - "<gray>XP: <white><xp>/<maxxp></white>"
+    - "<gray>Prestiż: <gold><prestige></gold>"
+  speed-item: "FEATHER"
+  speed-name: "<aqua>Ulepsz Szybkość</aqua>"
+  speed-lore:
+    - "<gray>Poziom: <white><speed_level>/5</white>"
+    - "<gray>Bonus: <green>+<bonus>%</green>"
+    - "<gray>Koszt: <gold><cost> XP</gold>"
+    - ""
+    - "<yellow>Kliknij, aby kupić!</yellow>"
+  prestige-item: "NETHER_STAR"
+  prestige-name: "<light_purple>Zdobądź Prestiż</light_purple>"
+  prestige-lore:
+    - "<gray>Obecny prestiż: <white><prestige></white>"
+    - "<gray>Wymagany lvl: <white>10</white>"
+    - ""
+    - "<yellow>Kliknij, aby awansować!</yellow>"
